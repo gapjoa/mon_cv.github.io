@@ -1,0 +1,589 @@
+@import url(https://fonts.google.com/specimen/Montserrat?query=monts);
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril&sidebar.open&selection.family=Abril+Fatface);
+@import url(https://fonts.googleapis.com/css2?family=Nosifer&family=Roboto+Mono:wght@500&display=swap);
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+body{
+    margin: 0px;
+}
+header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+   
+}
+h1{
+    font-family: 'abril Fatface', cursive;
+    margin-top: 50px;
+    animation: apparition 2s ease-out;
+    text-align: center;
+    
+}
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+header img{
+    width: 150px;
+}
+section.top-page{
+    background: url("../images/Design\ sans\ titre.png");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+    box-shadow: 0 0 10px black;
+   
+
+}
+nav{
+    font-size: 23px;
+   
+
+}
+/* page de bienvenu */
+
+.landing-page{
+    padding: 20px 80px;
+    position: relative;
+    
+}
+
+
+
+h1{
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 100;   
+    position: relative;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    display: inline;
+    
+
+}
+h1{
+    position: relative;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    display: inline;
+}
+h1 ::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+
+}
+
+h1:hover::after{
+    transform: scale(1);
+}
+
+.scroll-down{
+    color: rgba(240, 248, 255, 0);
+    text-decoration: none;
+    position: r;
+    font-weight: 100;
+
+}
+
+/* menu de navigation */
+
+nav.nav{
+    display: flex;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+
+    
+
+}
+nav.nav li a{
+    color: rgb(255, 251, 251);
+    font-family: 'Roboto Mono', monospace;
+    display: flex;
+    justify-content: left 200px;
+    align-items: center;
+    
+
+    
+
+
+}
+
+nav.nav li a{
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly ;
+ 
+    height: 100px;
+    position: relative;
+    white-space: 200px;
+    display: inline;
+    text-align: center;
+
+}
+nav.nav li ::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+nav.nav li :hover::after{
+    transform: scale(1);
+}
+
+div.competences{
+    transform: translate(100px, 0px);
+
+}
+div.voyages{
+    transform: translate(200px, 0px);
+}
+/* services */
+
+.services{
+    display: flex;
+    justify-content: space-evenly ;
+    margin: 50px;
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+    margin : 0px;
+    height: 150px;
+
+}
+
+.bac{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    display: inline;
+    position: relative;
+}
+
+div.p{
+    font-size: 20px;
+    font-weight: 600;
+    width: 290px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    display: inline;
+    position: relative;
+
+}
+div.p7{
+    left: 30px;
+    top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 290px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    height: 100px;
+    display: inline;
+    position: relative;
+    
+}
+div.p7 ::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    
+}
+div.p7 :hover::after{
+    
+    transform: scale(1);
+}
+
+p a{
+    top: -1Opx;
+    text-decoration: none;
+    color: black;
+}
+
+div.p ::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+div.p :hover::after{
+        transform: scale(1);
+    }
+
+div.imager{
+    font-size: (50px);
+    text-align: center;
+    
+}
+
+/* titre ce quej'aime */
+.moi{
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+}
+.moir{
+    margin: 50px;
+}
+
+.moi::before{
+    content:"";
+    position: absolute;
+    background-color: #d41b1b;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+    border-radius: 1000px;
+}
+/* image */
+.image-demoi{
+    
+    min-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:0 0 10px black;
+    border-radius: 10px;
+    animation: pulse 1.3s infinite;
+   
+}
+.tout{
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;    
+    background-position: center;
+    min-height: 350px;
+    height: 500px;
+    flex: 1;
+    position: relative;
+   
+    
+}
+
+.tout1{
+    background-image: url(../images/japon.jpg);
+    display: flex;
+    flex-wrap: wrap;  
+}
+.tout2{
+    background-image: url(../images/B2B-Commerce-Salesforce.jpg);
+    display: flex;
+    flex-wrap: wrap;  
+}
+.tout3{
+    background-image: url(../images/1689779725742.jpg);
+    display: flex;
+    flex-wrap: wrap;  
+}
+.tout4{
+    background-image: url(../images/velo.jfif );
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+
+.japon{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+    
+} 
+
+.japonname{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.topjapon{
+    color: black;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.economie{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+   
+} 
+
+.economiename{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.topeconomie{
+    color: black;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.sport{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+    
+} 
+
+.sportname{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.topsport{
+    color: black;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+.food{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+   
+} 
+
+.foodname{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.topfood{
+    color: black;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+}
+/* MES SOFTS SKILL ET JE SUIS */
+
+
+h2.competence{
+    left: 70px;
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+    display: flex;
+    flex-wrap: wrap; 
+}
+h2.competence::before{
+    content:"";
+    position: absolute;
+    background-color: #d41b1b;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+    border-radius: 1000px;
+
+}
+
+.swan::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.swan{
+    max-width: 600px;
+    opacity: 1;
+    padding: 30px;
+    right: 200px;
+    margin: 20px;
+    font-size: 24px;
+    border-radius: 1000px;
+    box-shadow: 0 0 10px black;
+    background-color: #f5ededdf;
+    transform: translate(50px, 0);
+    shape-outside: margin-box;
+    background-size: cover;
+    flex-grow: 1;
+    
+    
+}
+
+
+.swan h2{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+.swan p.deux{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+}
+.swan p.trois{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+}
+.swan p.quatre{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighte;
+}
+.swan1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.swan1 h2{
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', cursive;
+}
+.swan1 p.deux{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+}
+.swan1 p.trois{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+}
+.swan1 p.quatre{
+    line-height: 0.9;
+    font-family: 'Abril Fatface', cursive;
+    font-weight: lighte;
+}
+.swan1::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+p.trois{
+    transform: translate(13px, 0px)
+}
+p.quatre{
+    transform: translate(77px, 0px)
+}
+.swan2{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+    background-size: cover;
+    border-radius: 102px;
+    shape-outside: margin-box;
+}
+
+img.carre{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 20px;
+    animation: pulse 1.3s infinite;
+    display: flex;
+
+}
+@keyframes pulse{
+    to{
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.011) 
+    }
+}
+
+
+/* pied de page */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    font-weight: 600;
+}
+
+footer a.cgv{
+    text-decoration: none;
+    color: black;
+}
+
+/* carte du monde */
+
+div.word-map{
+    background: url("../images/monde.jpg");
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+    box-shadow: 0 0 10px black;
+    border-radius: 102px;
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+
+h2.word{
+    left: 70px;
+    font-size: 50px;
+    font-weight: 100;
+    position: relative;
+    font-family: 'Abril Fatface', cursive;
+    display: flex;
+    flex-wrap: wrap; 
+}
+h2.word::before{
+    content:"";
+    position: absolute;
+    background-color: #d41b1b;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+    border-radius: 1000px;
+}
+div.end{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #c01313c2;
+    padding: 20px 20px;
+}
